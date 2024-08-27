@@ -1,0 +1,142 @@
+.press_release {
+    text-align: center;
+    padding: 20px;
+}
+
+.press_release > h2 {
+    margin-bottom: 5px;
+    font-size: 42px;
+}
+
+.press_release > p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.slider_container {
+    position: relative;
+    width: 85%;
+    margin: 20px auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.slider_container > .blog_arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1;
+    color: #333;
+    background-color: rgba(200, 200, 200, 0.7);
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider_container > .blog_left_arrow {
+    left: 0;
+}
+
+.slider_container > .blog_right_arrow {
+    right: 0;
+}
+
+
+
+
+
+
+
+
+.slider_box {
+    width: calc(100% - 60px);
+    display: flex;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slider > .card {
+    flex: 0 0 32%; /* Each card takes up 32% of the width, leaving space for 2% gap between them */
+    margin-right: 2%;
+    box-sizing: border-box;
+    padding: 30px 10px;
+    text-align: left;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider > .card:last-child {
+    margin-right: 0; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider > .card > a {
+    width: 80%;
+}
+
+.slider > .card > a > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.slider > .card > p {
+    font-size: 18px;
+    margin: 10px 10px;
+    font-weight: 600;
+}
+
+.slider > .card > p:nth-of-type(2) {
+    font-size: 16px;
+    margin: 10px 10px;
+    color: gray;
+    font-weight: normal;
+}
+
+.slider > .card > a:nth-of-type(2) {
+    display: flex;
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.slider > .card > a > button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.slider > .card > a > button:hover {
+    background-color: #FFD43B;
+    color: black;
+}

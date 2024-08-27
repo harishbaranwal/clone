@@ -1,0 +1,398 @@
+
+
+
+
+.expand_section{
+    width: calc(85% + 50px);
+    margin: 0 auto;
+     
+}
+
+.expand_section>ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .expand_section>ul>li {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    padding: 10px 25px;
+  }
+  
+  .expand_section>ul>li>.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 0 10px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }
+  
+  .expand_section>ul>li> .item> p {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .expand_section>ul>li>.item> .toggle_icon {
+    font-size: 32px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    color: grey;
+  }
+  
+  .expand_section>ul>li>.details {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .expand_section>ul>li>.details>h3 {
+    margin: 0 0 5px 0;
+  }
+  
+
+
+  .expand_section>ul>li>.details > p {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0px 0 15px 0;
+}
+.expand_section>ul>li>.details >p >a{
+  color: black;
+}
+
+
+.expand_section>ul>li>.details>b>p {
+   font-size: 18px;
+   line-height: 24px;
+   margin: 0px 0 10px 0;
+}
+.expand_section>ul>li>.details > ol{
+  margin: 0px 0 15px 0;
+}
+.expand_section>ul>li>.details > ol > li {
+    font-size: 18px;
+    line-height: 24px;
+
+  }
+  .expand_section>ul>li>.details >  ol > li  >a{
+    color: black;
+  }
+.expand_section>ul>li>.details > ul{
+  margin: 0px 0 15px 0;
+}
+.expand_section>ul>li>.details > ul > li {
+ line-height: 24px;
+    font-size: 18px;
+}
+
+.expand_section>ul>li>.details > ol, 
+.expand_section>ul>li>.details > ul {
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.img_banner{
+
+width:100%;
+padding: 50px 0;
+}
+
+
+.img_banner > .main_img_banner {
+    width: 85%;
+    margin: 0 auto;
+    padding-left:  50px;
+    border-radius: 20px;
+    background-color: #ffe678;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .main_img_banner > .text_section {
+    width: 70%;
+  }
+  
+  .text_section > h1{
+    font-size: 42px;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+  
+  .text_section > ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .text_section > ul > li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .text_section > ul > li > i {
+    margin-right: 10px;
+    color: green;
+  }
+  
+  .text_section > a > .exchange_button {
+  background-color: #141313;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.text_section > a > .exchange_button:hover {
+  background-color: #363429;
+  color: #fff;
+}
+
+/* If you want to style the link inside the button as well */
+.text_section > a {
+  text-decoration: none;
+}
+
+  
+
+
+
+  .main_img_banner > .img_section {
+    width: 30%;
+    height: 100%;
+  }
+  
+  .img_section > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    bottom: -5px;
+    position: relative;
+  }
+  
+  
+
+
+/*   
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////  
+ End Section-4
+/////////////////////////////////////////////////////// 
+///////////////////////////////////////////////////////
+ */
+
+
+
+
+
+.txt_banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+    background-color: black; 
+}
+
+.txt_banner>h1 {
+    font-size: 34px; 
+    text-align: center;
+    color: white; 
+}
+
+
+
+
+
+/*   
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////  
+ End Section-4
+/////////////////////////////////////////////////////// 
+///////////////////////////////////////////////////////
+ */
+
+
+
+
+
+
+ .section-4 {
+    height: fit-content;
+    height: 600px;
+    margin-top: 50px;
+        align-items: center;
+    background: linear-gradient(300deg, #ede3e3, 30%, #e9e4e4, #d8e3e4, #cae7e9);
+  }
+  
+  
+  /* Start Contact-Modal */
+  .contact-div1 {
+    max-width: 1600px;
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+
+  .contact-div1>h1 {
+    font-size: 40px;  padding-top: 5%;
+    margin: 0;
+  }
+  .contact-div1>p {
+    margin-top: 10px;
+  }
+  
+  .line-container {
+    width: 250px;
+    margin: 1% auto 2% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .line {
+    height: 2px;
+    flex: 1;
+    background-color: green;
+  }
+  
+  .circle {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 0 10px;
+  }
+  
+  @media(max-width:590px) {
+    .contact-div1 h1 {
+      font-size: 30px;
+    }
+  
+    .line-container {
+      width: 50%;
+    }
+  }
+  
+  @media(max-width:350px) {
+    .contact-div1 h1 {
+      font-size: 25px;
+    }
+  }
+  
+  
+  /* End Contact Modal */
+  
+  /*
+  //////////////////////////////////////////////
+  //////////////////////////////////////////////
+  */
+  
+  /* Start COntact Method */
+  
+  
+  .contact-div2 {
+    width: 90%;
+    max-width: 1600px;
+    margin: 5% auto;
+    height: 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .logo1,
+  .logo2,.logo3 {
+    width: calc(100/3);
+  }
+  
+ 
+  
+  .logo-design {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+    background-color: #f5f8f2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo-shadow {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 30px;
+    color: #FB6E0F;
+  }
+  
+  .logo-txt {
+    text-align: center;
+  }
+  .logo-txt>p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  
+  @media (max-width:650px) {
+  
+    .contact-div2 {
+      flex-direction: column;
+      justify-content: space-around;
+      height: 550px;
+      align-items: center;
+    }
+  
+    .logo1,
+    .logo2,
+    .logo3 {
+      width: 100%;
+    }
+  }
+  
+  /* End Contact-Method */
+  

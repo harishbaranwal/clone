@@ -1,0 +1,19 @@
+.about_box{
+    width:85%;
+   margin: 40px auto 100px auto;
+}
+
+.about_box>h1{
+    text-align: center;
+}
+
+.about_box>p{
+    font-size: 16px;
+    color: gray;
+    line-height: 24px;
+}
+
+.about_box>p>a{
+    color: black;
+    text-decoration: none;
+}

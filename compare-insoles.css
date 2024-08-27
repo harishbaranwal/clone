@@ -1,0 +1,281 @@
+
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    background-color: black; 
+}
+
+.banner>h1 {
+    font-size: 28px; 
+    text-align: center;
+    color: white; 
+}
+
+
+
+
+.compare_section {
+    margin: 50px auto;
+    width: 94%;
+    overflow-x: auto; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px; 
+}
+
+.fixed-column {
+    display: grid;
+    grid-template-rows: repeat(7, auto); 
+    row-gap: 10px; 
+}
+
+.scrollable-columns {
+    overflow-x: auto; 
+    display: grid;
+    grid-template-rows: repeat(7, auto);
+    gap: 10px; 
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); 
+    gap: 10px; 
+}
+
+.fixed-column>.cell{
+    background-color:#fff3c2; 
+    border: 1px solid #cccccc; 
+    border-radius: 10px; 
+    padding: 15px;
+    width: 200px;
+    height: 100px;
+    box-sizing: border-box; 
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.row>.cell {
+    background-color: #ebebeb; 
+    border: 1px solid #cccccc; 
+    border-radius: 10px; 
+    padding: 15px;
+    width: 300px;
+    height: 100px;
+    box-sizing: border-box; 
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.scrollable-columns {
+    overflow-x: auto; 
+    overflow-y: hidden; 
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+.scrollable-columns::-webkit-scrollbar {
+    display: none; 
+}
+
+
+
+.row-6 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row-6 >.cell {
+    flex: 1;
+    padding: 10px; /* Adjust padding as needed */
+    box-sizing: border-box;
+    height: 150px;
+}
+
+.fixed-column>.row-6_cell{
+    height: 150px;
+}
+
+
+.row-6 >.cell>.line {
+    margin-bottom: 10px; /* Space between lines */
+    display: flex;
+    align-items: center;
+}
+
+ 
+    .row-6 >.cell>.line>img {
+    margin-right: 10px; 
+    max-width: 50px; 
+    height: auto; 
+}
+.row-6 >.cell>.line:last-child {
+margin-bottom: 0;
+}
+
+.row-6 >.cell>.line>p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.row-7 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row-7 > .cell {
+    flex: 1;
+    padding: 10px; 
+    box-sizing: border-box;
+    height: 120px;
+}
+.fixed-column>.row-7_cell{
+    height: 120px;
+}
+
+.row-7 > .cell > .line {
+   
+    width:120px;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 10px; 
+}
+
+.row-7 > .cell > .line > .yellow_circle {
+    width: 20px; 
+    height: 20px; 
+    background-color: yellow;
+    border-radius: 50%; 
+}
+
+.row-7 > .cell > .line > .green_circle {
+    width: 20px; 
+    height: 20px; 
+    background-color: green;
+    border-radius: 50%; 
+}
+
+.row-7 > .cell > .line > p {
+    margin: 0 0 0 20px; 
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.row-7 > .cell > .line:last-child {
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.row-1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row-1 > .cell {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 150px;
+    text-align: left;
+}
+
+
+.fixed-column>.row-1_cell{
+    height: 150px;
+}
+
+.row-1 > .cell > img {
+    width: 100px; /* Set the width of the image */
+    height: 100px; /* Set the height of the image */
+    margin-right: 10px; /* Space between image and text */
+    object-fit: cover; /* Ensure the image fits within the set dimensions */
+}
+
+.row-1 > .cell > .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.row-1 > .cell > .text-container > p {
+    margin: 0;
+    margin-bottom: 5px; /* Space between text and button */
+}
+
+.row-1 > .cell > .text-container > a {
+    padding: 9px 20px; /* Adjust button padding as needed */
+    color: black;
+    background-color: #fcd00a;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 5px 0px;
+    display: inline-flex; /* Ensure button and link are inline */
+    text-decoration: none;
+}
+
+.row-1 > .cell > .text-container > a > button {
+    border: none;
+    color: black;
+    background-color: #fcd00a;
+    cursor: pointer;
+    padding: 0; /* Remove default padding to fit within the anchor */
+    margin: 0; /* Remove default margin */
+    font-size: inherit; /* Inherit font size from parent */
+    font-weight: inherit; /* Inherit font weight from parent */
+}
+
+.row-1 > .cell > .text-container > a:hover {
+    background-color: #fdd627;
+}
+
+.row-1 > .cell > .text-container > a:hover > button {
+    background-color: #fdd627;
+}
+
+/* Optional: Ensuring button also shows hover effect when hovering directly */
+.row-1 > .cell > .text-container > a > button:hover {
+    background-color: #fdd627;
+}

@@ -1,0 +1,368 @@
+
+
+.best_seller_banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background-color: #ffda33;
+}
+
+.best_seller_banner>h1 {
+    font-size: 34px; 
+    font-weight: 600;
+    text-align: center;
+color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.quiz_banner {
+    width: 100%;
+    padding: 30px 0;
+    margin: 40px 0;
+    background-color: #ffda33;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.quiz_banner > h1,
+.quiz_banner > h3,
+.quiz_banner > button {
+    margin: 10px 0;
+}
+
+.quiz_banner > button {
+    padding: 15px 30px;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.quiz_banner > button > a {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.quiz_banner > button:hover {
+    background-color:#2e2a1c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.awards_section {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.awards_section > h1,
+.awards_section > h3,
+.awards_section > hr,
+.awards_section > p {
+    margin: 10px 0;
+}
+.awards_section > h1{
+    font-size: 50px;
+    font-weight:800;
+}
+.awards_section > h3{
+    margin-bottom: 25px;
+}
+.awards_section > p {
+    margin-top: 25px;
+}
+
+
+.awards_section > .award_box > .award_box_1 >p,
+.awards_section > .award_box > .award_box_2 >p,
+.awards_section > .award_box > .award_box_3 >p {
+font-size: 18px;
+}
+
+.awards_section > hr {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.awards_section > .award_box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.awards_section > .award_box > .award_box_1,
+.awards_section > .award_box > .award_box_2,
+.awards_section > .award_box > .award_box_3 {
+    width: 30%;
+    text-align: center;
+}
+
+.awards_section > .award_box > .award_box_1 >img,
+.awards_section > .award_box > .award_box_2 >img,
+.awards_section > .award_box > .award_box_3 >img {
+    max-width: 50%;
+    height: auto;
+}
+
+
+
+
+
+
+
+.best_seller_product_section {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    gap: 30px; /* Add some gap between cards */
+    width: 75%;
+    margin: 40px auto;
+    justify-content: space-between; /* Align cards evenly with spacing between */
+  }
+
+
+  .best_seller_product_section > .card {
+    flex: 0 1 calc(33.333% - 20px); /* 3 cards per row with gap considered */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    height: 750px;
+    list-style: none;
+    border: 2px black solid;
+    background-color: white;
+    cursor: pointer;
+    flex-direction: column;
+    border-radius: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: calc(33.333% - 20px); /* Set an explicit width for each card */
+  }
+  
+
+  
+  .best_seller_product_section>.card> .img {
+    background: white;
+    border-radius: 30px;
+  
+  }
+  
+  .card>.img>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+  }
+  
+  .best_seller_product_section>.card>h2 {
+    font-weight: 600;
+    font-size: 24px;
+    margin: 20px 0 5px 15px;
+    width: 80%;
+ 
+  }
+  
+  .best_seller_product_section>.card >.review {
+    border: 2px rgb(202, 202, 202) solid;
+    border-radius: 5px;
+    width: 45%;
+    padding: 0;
+    margin-left: 15px;
+  }
+  
+  .best_seller_product_section>.card> .review > p {
+    margin: 4px;
+    font-size: 12px;
+  }
+  
+  .best_seller_product_section>.card > span {
+    color: black;
+    font-size: 15px;
+    margin: 5px 0 5px 15px;
+  }
+  
+
+
+
+  
+  
+
+  .product-features {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0px 0 0px 15px;
+  }
+  
+  .product-features>li {
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Vertically center items */
+    font-size: 15px; /* Set the font size */
+    margin-bottom: 5px; /* Space between items */
+  }
+  
+  .product-features>li>p {
+    margin: 0;
+    margin-left: 5px;
+  }
+  .product-features>li>.icon {
+    color: green; /* Set icon color to green */
+    margin-right: 4px; /* Space between icon and text */
+  }
+  
+
+
+
+
+
+
+
+
+
+  .best_seller_product_section>.card > button {
+    margin: 5px 15px 15px 15px;
+    margin-bottom: 50px;
+    padding: 20px 20px;
+    background-color: #fcd00a;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .best_seller_product_section>.card > button:hover {
+    background-color: #f7cb0a;
+  }
+  
+  .best_seller_product_section>.card > button> a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  
+  .best_seller_product_section > .card > select {
+    margin: 5px 15px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Add a border if needed */
+    appearance: none; /* Hide the default dropdown icon */
+    -webkit-appearance: none; /* For WebKit browsers */
+    -moz-appearance: none; /* For Firefox */
+    background: white; /* Set background to ensure it's consistent */
+    font-size: 16px; /* Adjust font size if needed */
+    color: black; /* Adjust text color if needed */
+}
+
+.best_seller_product_section > .card > select:focus {
+    outline: none; /* Remove outline on focus */
+}
+
+
+  .pricing-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 15px;
+    background-color: #f2e4a8;
+    padding: 10px;
+  }
+  
+  .left_pricing {
+    width: 80%;
+    border-right: 2px solid rgb(113, 113, 113);
+    padding-right: 10px;
+  }
+  
+  .left_pricing > .mrp,
+  .left_pricing > .emi-info {
+    font-size: 12px;
+    margin: 0;
+  }
+  
+ 
+  .mrp {
+    position: relative; /* Positioning the parent for the pseudo-element */
+  }
+  
+  .mrp > .cut-price {
+    position: relative; /* Positioning for the pseudo-element */
+    color: #888; /* Keeps the text color gray */
+  }
+  
+  .mrp > .cut-price::after {
+    content: ''; /* No text, just a line */
+    position: absolute; /* Position relative to the parent element */
+    top: 50%; /* Vertically center the line */
+    left: -5%;
+    width: 110%; /* Full width of the text */
+    height: 1.1px; /* Thickness of the line */
+    background-color: black; /* Color of the line */
+    transform: rotate(-10deg); /* Rotate the line by 45 degrees */
+    transform-origin: center; /* Rotate around the center */
+  }
+  
+  .offer-price {
+    font-size: 18px;
+    color: #000;
+    font-weight: 600;
+    margin: 5px 0;
+  }
+  
+  .offer-price > strong {
+    font-size: 20px;
+  }
+  
+  .emi-info .green-price {
+    font-weight: bold;
+    color: green;
+  }
+  
+  .right_pricing {
+    color: black;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    width: 20%;
+    padding-left: 10px;
+  }
+  
+  .right_pricing >strong {
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
