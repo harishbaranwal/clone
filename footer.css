@@ -1,0 +1,292 @@
+
+
+
+footer {
+    background-color: black;
+    padding: 20px 0;
+    margin: 20px 0 80px 0;
+}
+
+.footer-top-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 15px;
+    margin-top: 50px;
+}
+
+.footer-column > h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.footer-column > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column > ul > li {
+    margin-bottom: 8px;
+}
+
+.footer-column > ul > li > a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+.footer-down-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    color: white; /* Background color for contrast */
+    padding: 0 5%;
+}
+
+.footer-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    max-width: 200px; /* Adjust based on your logo size */
+}
+
+.footer-down-container>.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.footer-down-container>.footer-columns ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info {
+    flex: 0 0 35%; /* Width of contact-info column */
+}
+
+.grievance-officer, .support-officer {
+    flex: 0 0 22%; 
+}
+
+.social-media {
+    flex: 0 0 15%; /* Width of social-media column */
+}
+
+
+.footer-down-container>.footer-columns ul li a {
+    color: white;
+    text-decoration: none;
+}
+.footer-down-container>.footer-columns>.contact-info>li:nth-child(1)>a {
+    font-size: 20px; /* Slightly larger heading size */
+    font-weight: bold; 
+}
+
+.footer-down-container>.footer-columns ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-down-container>.footer-columns ul.contact-info p,
+.footer-down-container>.footer-columns ul.grievance-officer p,
+.footer-down-container>.footer-columns ul.support-officer p {
+    margin: 5px 0;
+    line-height: 1.6; /* Improve readability */
+    font-size: 16px;
+}
+
+.footer-down-container>.footer-columns h4 {
+    font-size: 20px; /* Slightly larger heading size */
+    margin: 0;
+    color: white;
+    font-weight: bold; /* Make headings stand out */
+}
+
+.footer-down-container>.footer-columns >.social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.social-links>.social-icon{
+    margin-right: 10px;
+}
+
+
+.social-links > .social-icon > i {
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* Example colors */
+.social-links > .social-icon>.fa-facebook-f  {
+    color: #3b5998; /* Facebook color */
+}
+
+.social-links > .social-icon>.fa-twitter  {
+    color: #1da1f2; /* Twitter color */
+}
+
+.social-links > .social-icon>.fa-instagram {
+    color: #e1306c; /* Instagram color */
+}
+
+.social-links > .social-icon>.fa-linkedin-in  {
+    color: #0077b5; /* LinkedIn color */
+}
+
+.social-links > .social-icon>.fa-whatsapp  {
+    color: #25D366; /* WhatsApp color */
+}
+
+/* Hover colors */
+.social-links > .social-icon>.fa-facebook-f:hover  {
+    color: #2d4373; /* Darker Facebook color on hover */
+}
+
+.social-links > .social-icon>.fa-twitter:hover  {
+    color: #0d95e8; /* Darker Twitter color on hover */
+}
+
+.social-links > .social-icon>.fa-instagram:hover  {
+    color: #c13584; /* Darker Instagram color on hover */
+}
+
+.social-links > .social-icon>.fa-linkedin-in:hover  {
+    color: #005582; /* Darker LinkedIn color on hover */
+}
+
+.social-links > .social-icon>.fa-whatsapp:hover  {
+    color: #1ebe6c; /* Darker WhatsApp color on hover */
+}
+
+
+@media(max-width: 1180px) {
+    .help-column {
+        flex: 0 0 30%; /* Set the width to 55% */
+    }
+
+    .contact-info {
+        flex: 0 0 45%; /* Adjusted width for contact-info column */
+    }
+    
+    .grievance-officer, .support-officer {
+        flex: 0 0 25%; 
+    }
+    
+    .social-media {
+        flex: 0 0 100%; /* Take full width on smaller screens */
+        display: flex;
+        justify-content: flex-end; /* Align to the right */
+        margin-left: auto; /* Push it to the right */
+        margin-top: 20px; /* Add some space from the top */
+    }
+
+    .social-links {
+        justify-content: flex-end;
+    }
+}
+
+
+
+@media (max-width: 880px) {
+    .contact-info,.support-officer{
+        flex: 0 0 55%;
+    }
+    .grievance-officer,.social-media {
+        flex: 0 0 40%; /* Take full width on smaller screens */
+        justify-content: flex-start; /* Align to the right */
+    }
+
+    .social-links {
+        justify-content: flex-start;
+    }
+
+
+}
+
+
+/* CSS to hide the list items by default on screens smaller than 768px */
+@media (max-width: 768px) {
+    .footer-top-container{
+        flex-direction: column;
+    }
+
+
+    .footer-logo img {
+        max-width: 150px; /* Adjust based on your logo size */
+    }
+
+    .footer-column {
+        margin-top: 0px;
+    }
+
+    .footer-column ul {
+        display: none; /* Hide the list items */
+    }
+
+    .footer-column h3 {
+        cursor: pointer; /* Indicate that the h3 is clickable */
+        position: relative;
+        padding-right: 25px; 
+        margin-top: 10px;/* Space for the dropdown icon */
+    }
+
+    /* Add a dropdown icon using :after pseudo-element */
+    .footer-column h3::after {
+        content: '\25BC'; /* Down arrow */
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 14px;
+    }
+
+    /* Rotate the dropdown icon when the dropdown is active */
+    .footer-column h3.active::after {
+        content: '\25B2'; /* Up arrow */
+    }
+
+    /* Display the list items when h3 is clicked */
+    .footer-column ul.show {
+        display: block; /* Show the list items */
+    }
+}
+
+
+@media(max-width:650px){
+
+.footer-down-container>.footer-columns {
+    flex-direction: column;
+}
+.social-media {
+    justify-content: flex-start; 
+}
+.social-links {
+    justify-content: flex-start;
+}
+.footer-logo img {
+    max-width: 150px; /* Adjust based on your logo size */
+}
+
+}

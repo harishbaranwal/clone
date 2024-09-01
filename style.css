@@ -25,27 +25,7 @@ body {
     height: 60px; /* High z-index to stay above other elements */
 }
 
-header {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 50px ; /* Adjusted padding to account for top-bar height */
-    background-color: wheat;
-    color: black;
-    width: 100%; /* Ensure it spans the full width */
-    box-sizing: border-box; /* Include padding in width calculation */
-    z-index: 500; /* Below the top bar */
-    /* transition: position 2s, top .2s;  */
-    transition: all 0.2s ease;
-}
 
-header.fixed {
-    position: fixed;
-    top: 0px; /* Adjusted to account for the height of the top-bar */
-    width: 100%; /* Maintain full width */
-    z-index: 500; /* Same z-index to keep it below the top bar */
-}
 
 
 
@@ -143,6 +123,123 @@ font-size: 16px;
 
 
 
+@media(max-width:768px){
+
+
+    .top-bar_slider > ul > li > .heading > p {
+        font-size: 14px;
+        }
+        .top-bar_slider > ul > li > button {
+            padding: 4px 10px;
+     
+        }
+   
+.top-bar {
+   padding: 0 30px;
+}
+
+}
+
+
+@media(max-width:600px){
+    .top-bar_slider > ul > li > .heading > h4 {
+        font-size: 16px;
+        }
+
+    .top-bar_slider > ul > li > .heading > p {
+        font-size: 14px;
+        }
+        .top-bar_slider > ul > li > button {
+            padding: 3px 8px;
+        }
+   
+.top-bar {
+   padding: 0 20px;
+}
+.arrow {
+    cursor: pointer;
+    font-size: 20px;
+
+
+}
+.top-bar_slider > ul > li > i {
+    margin: 0px 10px;
+    color: #FFD43B;
+    font-size: 16px;
+}
+
+}
+
+@media(max-width:480px){
+    .top-bar_slider > ul > li > .heading > h4 {
+        font-size: 13px;
+        }
+
+    .top-bar_slider > ul > li > .heading > p {
+        font-size: 13px;
+        }
+        .top-bar_slider > ul > li > button {
+            padding: 4px 8px;
+            font-size: 13px;
+        }
+   
+.top-bar {
+   padding: 0 15px;
+}
+.arrow {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+}
+
+
+
+
+@media(max-width:420px){
+    .top-bar_slider > ul > li > .heading > h4 {
+        font-size: 12px;
+        }
+
+    .top-bar_slider > ul > li > .heading > p {
+        font-size: 14px;
+        }
+        .top-bar_slider > ul > li > button {
+            padding: 5px 10px;
+        }
+   
+.top-bar {
+   padding: 0 15px;
+}
+.arrow {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+
+}
+@media(max-width:390px){
+    .top-bar_slider > ul > li > .heading > h4 {
+        font-size: 10px;
+        }
+
+    .top-bar_slider > ul > li > .heading > p {
+        font-size: 12px;
+        }
+        .top-bar_slider > ul > li > button {
+            padding: 5px 6px;
+        }
+   
+.top-bar {
+   padding: 0 15px;
+}
+.arrow {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+}
 
 
 
@@ -154,19 +251,38 @@ font-size: 16px;
 
 
 
+header{
+    background-color: wheat;
+}
 
 
 
 
+/* General Styles for .Header-body and Navbar */
+.header-body {
+    position: relative;
+    display: flex;
+    align-items: center;
+justify-content: space-between;
+    padding: 10px 50px 10px 0;
+    background-color: wheat;
+    color: black;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    z-index: 500;
+    transition: all 0.2s ease;
+    max-width: 1450px;
+}
 
+.header-body.fixed {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 500;
+}
 
-
-
-
-
-
-
-.logo > img {
+.logo > a > img {
     height: 50px;
 }
 
@@ -190,11 +306,8 @@ font-size: 16px;
 }
 
 .navbar > ul > li:hover > a,
-.navbar > ul > li :hover> .dropdown-icon {
+.navbar > ul > li :hover > .dropdown-icon {
     color: white;
-}
-.navbar > ul > li:hover > .dropdown-content > li > a:hover {
-    background-color: #c5c0c0;
 }
 
 .navbar > ul > li > .dropdown-icon {
@@ -202,23 +315,17 @@ font-size: 16px;
     color: black;
 }
 
-.navbar > ul > li:hover > a,
-.navbar > ul > li.dropdown:hover >i {
-    color: white;
-}
 .navbar > ul > li > .dropdown-content {
     display: none;
     position: absolute;
     background-color: #eaeaea;
     min-width: 200px;
-    padding-left: 0;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     z-index: 1;
     left: 0;
     font-size: 16px;
     padding-top: 12px;
     padding-bottom: 12px;
-
 }
 
 .navbar > ul > li > .dropdown-content > li {
@@ -229,7 +336,7 @@ font-size: 16px;
 .navbar > ul > li > .dropdown-content > li > a {
     padding: 5px 16px;
     display: block;
-    color:black;
+    color: black;
     text-align: left;
     text-decoration: none;
 }
@@ -238,16 +345,88 @@ font-size: 16px;
     display: block;
 }
 
-.icons > i {
+/* Right Icons Styles */
+.right_icons > i {
     color: black;
     font-size: 24px;
     margin-left: 20px;
     cursor: pointer;
 }
 
-.icons > i:hover {
+.right_icons > i:hover {
     color: #FFD43B;
 }
+
+/* Sidebar Styles */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: rgb(214, 142, 8);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar > .navbar {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: rgb(214, 142, 8);
+}
+
+.sidebar > .navbar > ul {
+    flex-direction: column;
+}
+
+.sidebar > .navbar > ul > li {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar > .navbar > ul > li > a {
+    padding: 10px;
+    display: block;
+}
+
+.sidebar > .navbar > ul > li > i {
+    float: right;
+}
+
+/* Dropdown in Sidebar */
+.sidebar > .navbar > ul > li > .dropdown-content {
+    display: none;
+    padding-left: 20px;
+    transition: max-height 0.3s ease;
+}
+
+.sidebar > .navbar > ul > li > a {
+    cursor: pointer;
+}
+
+/* Close Icon in Sidebar */
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: black;
+}
+
+.close-icon:hover {
+    color: #FFD43B;
+}
+
+/* Media Query */
+
+
+
 
 
 
@@ -270,13 +449,13 @@ font-size: 16px;
 .search-box {
     display: none;
     position: fixed;
-    margin-top: 0px; /* Adjust based on header height */
+    margin-top: 0px; /* Adjust based on .header-body height */
     left: 0;
     width: 100%;
     background: white;
     border-top: 1px solid #ddd;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    z-index: 1000; /* Ensure it's above other content */
+    z-index: 600; /* Ensure it's above other content */
 }
 
 .search-content {
@@ -298,6 +477,8 @@ font-size: 16px;
     outline: none;
 }
 
+
+
 .close-search {
     margin-left: 10px;
     cursor: pointer;
@@ -307,6 +488,278 @@ font-size: 16px;
 .close-search:hover{
     color:rgb(243, 198, 198)
 }
+
+
+
+
+@media screen and (max-width: 1280px) {
+    .header-body {
+        padding: 10px 30px 10px 0px ; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+  
+    .navbar > ul > li {
+        padding: 0 10px;
+    }
+    .navbar > ul > li > a {
+        color: black;
+      font-size: 20px;
+    
+    }
+    .navbar > ul > li > .dropdown-icon {
+        font-size: 10px;
+        color: black;
+    }
+    
+    .right_icons > i {
+        color: black;
+        font-size: 24px;
+        margin-left: 15px;
+    }
+
+}
+
+
+@media screen and (max-width: 1180px) {
+    .header-body {
+        padding: 10px 30px 10px 0px ; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .logo > a > img {
+        height: auto;
+        width: 80px;
+    }
+    .navbar > ul > li {
+        padding: 0 7px;
+    }
+    .navbar > ul > li > a {
+        color: black;
+        font-size: 20px;
+    
+    }
+    .navbar > ul > li > .dropdown-icon {
+        font-size: 10px;
+        color: black;
+    }
+    
+    .right_icons > i {
+        color: black;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 1080px) {
+    .header-body {
+        padding: 10px 30px 10px 0px ; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .logo > a > img {
+        height: auto;
+        width: 80px;
+    }
+    .navbar > ul > li {
+        padding: 0 5px;
+    }
+    .navbar > ul > li > a {
+        color: black;
+        font-size: 18px;
+    
+    }
+    .navbar > ul > li > .dropdown-icon {
+        font-size: 10px;
+        color: black;
+    }
+    
+    .right_icons > i {
+        color: black;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .header-body {
+       
+        padding: 10px 30px ; 
+      
+    }
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: wheat;
+        width: 100%;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Display navbar items vertically */
+        text-align: left;
+    }
+
+    .navbar ul li {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .navbar ul li a {
+        padding: 10px;
+        display: block;
+    }
+
+    .left_icons>.hamburger, .left_icons>.left_search_icon {
+        display: inline-block;
+        cursor: pointer;
+    }
+   .right_icons>.right_search_icon{
+        display: none;
+    }
+    .left_icons > i:nth-child(2){
+       
+        margin-left: 20px;
+       
+    }
+    .left_icons > i{
+        cursor: pointer;
+        color: black;
+        font-size: 24px;
+    }
+    .right_icons > i:hover {
+        color: black;
+    }
+    
+    
+
+   
+}
+
+/* Hide hamburger icon on larger screens */
+@media screen and (min-width: 1025px) {
+    .left_icons>.hamburger,
+     .left_icons> .left_search_icon {
+        display: none;
+    }
+
+}
+
+
+
+@media(max-width:768px){
+
+    .header-body {
+       
+        padding: 10px 30px ; 
+      
+    }
+
+    .right_icons > i {
+        font-size: 24px;
+        margin-left: 20px;
+    }
+   
+    .left_icons > i:nth-child(2){
+        margin-left: 20px;
+       
+    }
+    .left_icons > i{
+        font-size: 24px;
+    }
+    .header-body> .logo >a> img {
+        height: 45px;
+    }
+
+}
+    @media(max-width:600px){
+
+
+        .header-body {
+       
+            padding: 10px 20px ; 
+          
+        }
+        .header-body> .logo >a> img {
+            height: 40px;
+        }
+
+    }
+        @media(max-width:480px){
+            .header-body {
+                padding: 10px 15px ;  
+            }
+            .right_icons > i {
+                font-size: 18px;
+                margin-left: 10px;
+            }
+           
+            .left_icons > i:nth-child(2){
+                margin-left: 10px;
+               
+            }
+            .left_icons > i{
+                font-size: 18px;
+            }
+            .header-body> .logo >a> img {
+                height: 35px;
+            }
+        }
+
+
+            @media(max-width:420px){
+                
+           
+                .search-content {
+                   
+                    padding: 8px 10px;
+                }
+              .header-body> .logo >a> img {
+                    height: 30px;
+                }
+              
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -970,6 +1423,11 @@ font-size: 12px;
 
 
 
+
+
+
+
+
 footer {
     background-color: black;
     padding: 20px 0;
@@ -981,7 +1439,7 @@ footer {
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 5%;
 }
 
 .footer-column {
@@ -1024,6 +1482,7 @@ footer {
     display: flex;
     flex-direction: column;
     color: white; /* Background color for contrast */
+    padding: 0 5%;
 }
 
 .footer-logo {
@@ -1054,7 +1513,7 @@ footer {
 }
 
 .grievance-officer, .support-officer {
-    flex: 0 0 22%; /* Width of grievance-officer and support-officer columns */
+    flex: 0 0 22%; 
 }
 
 .social-media {
@@ -1147,3 +1606,123 @@ footer {
 .social-links > .social-icon>.fa-whatsapp:hover  {
     color: #1ebe6c; /* Darker WhatsApp color on hover */
 }
+
+
+@media(max-width: 1180px) {
+    .help-column {
+        flex: 0 0 30%; /* Set the width to 55% */
+    }
+
+    .contact-info {
+        flex: 0 0 45%; /* Adjusted width for contact-info column */
+    }
+    
+    .grievance-officer, .support-officer {
+        flex: 0 0 25%; 
+    }
+    
+    .social-media {
+        flex: 0 0 100%; /* Take full width on smaller screens */
+        display: flex;
+        justify-content: flex-end; /* Align to the right */
+        margin-left: auto; /* Push it to the right */
+        margin-top: 20px; /* Add some space from the top */
+    }
+
+    .social-links {
+        justify-content: flex-end;
+    }
+}
+
+
+
+@media (max-width: 880px) {
+    .contact-info,.support-officer{
+        flex: 0 0 55%;
+    }
+    .grievance-officer,.social-media {
+        flex: 0 0 40%; /* Take full width on smaller screens */
+        justify-content: flex-start; /* Align to the right */
+    }
+
+    .social-links {
+        justify-content: flex-start;
+    }
+
+
+}
+
+
+/* CSS to hide the list items by default on screens smaller than 768px */
+@media (max-width: 768px) {
+    .footer-top-container{
+        flex-direction: column;
+    }
+
+
+    .footer-logo img {
+        max-width: 150px; /* Adjust based on your logo size */
+    }
+
+    .footer-column {
+        margin-top: 0px;
+    }
+
+    .footer-column ul {
+        display: none; /* Hide the list items */
+    }
+
+    .footer-column h3 {
+        cursor: pointer; /* Indicate that the h3 is clickable */
+        position: relative;
+        padding-right: 25px; 
+        margin-top: 10px;/* Space for the dropdown icon */
+    }
+
+    /* Add a dropdown icon using :after pseudo-element */
+    .footer-column h3::after {
+        content: '\25BC'; /* Down arrow */
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 14px;
+    }
+
+    /* Rotate the dropdown icon when the dropdown is active */
+    .footer-column h3.active::after {
+        content: '\25B2'; /* Up arrow */
+    }
+
+    /* Display the list items when h3 is clicked */
+    .footer-column ul.show {
+        display: block; /* Show the list items */
+    }
+}
+
+
+@media(max-width:650px){
+
+.footer-down-container>.footer-columns {
+    flex-direction: column;
+}
+.social-media {
+    justify-content: flex-start; 
+}
+.social-links {
+    justify-content: flex-start;
+}
+.footer-logo img {
+    max-width: 150px; /* Adjust based on your logo size */
+}
+
+}
+
+
+
+
+
+
+
+
+

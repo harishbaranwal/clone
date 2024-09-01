@@ -13,7 +13,6 @@
 <body>
     
     
-
     <div class="top-bar">
         <div class="arrow left-arrow">&#9664;</div>
         <div class="top-bar_slider">
@@ -56,21 +55,99 @@
     </div>
 
 
-  
+
+
     <header>
-        <div class="logo">
-            <a href="index.html"><img src="assets/logo.png" alt="Logo"></a>
+        <div class="header-body">
+            <div class="left_icons">
+                <i class="fas fa-bars hamburger" onclick="toggleSidebar()"></i>
+                <i class="fas fa-search left_search_icon"></i>
+            </div>
+            <div class="logo">
+                <a href="index.html"><img src="assets/logo.png" alt="Logo"></a>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">New Launches</a></li>
+                    <li class="dropdown">
+                        <a href="bestseller.html">Best Sellers</a>
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Best Seller 1</a></li>
+                            <li><a href="#">Best Seller 2</a></li>
+                            <li><a href="#">Best Seller 3</a></li>
+                            <li><a href="bestseller.html"><u>See All</u></a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Shoe Inserts</a>
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Insert 1</a></li>
+                            <li><a href="#">Insert 2</a></li>
+                            <li><a href="#">Insert 3</a></li>
+                            <li><a href="bestseller.html"><u>See All</u></a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Cushions</a>
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Cushion 1</a></li>
+                            <li><a href="#">Cushion 2</a></li>
+                            <li><a href="#">Cushion 3</a></li>
+                            <li><a href="bestseller.html"><u>See All</u></a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Pillows</a>
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Pillow 1</a></li>
+                            <li><a href="#">Pillow 2</a></li>
+                            <li><a href="#">Pillow 3</a></li>
+                            <li><a href="bestseller.html"><u>See All</u></a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Repeat for other items like Shoe Inserts, Cushions, etc. -->
+                    <li class="dropdown">
+                        <a href="#">More</a>
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                        <ul class="dropdown-content">
+                            <li><a href="./about.html">About Us</a></li>
+                            <li><a href="./contact.html">Contact Us</a></li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="retailer.html">Become a Retailer</a></li>
+                            <li><a href="./gifting.html">Corporate Gifting</a></li>
+                            <li><a href="./compare-insoles.html">Compare Insoles</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Quiz</a></li>
+                </ul>
+            </nav>
+            <div class="right_icons">
+                <i class="fas fa-search right_search_icon"></i>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-user"></i>
+            </div>
+        </div>
+    </header>
+
+    <div id="sidebar" class="sidebar">
+        <div class="close-icon">
+            <i class="fas fa-times" onclick="toggleSidebar()"></i>
         </div>
         <nav class="navbar">
             <ul>
                 <li><a href="#">New Launches</a></li>
                 <li class="dropdown">
                     <a href="bestseller.html">Best Sellers</a>
-                    <i class="fas fa-chevron-down dropdown-icon"></i>
                     <ul class="dropdown-content">
                         <li><a href="#">Best Seller 1</a></li>
                         <li><a href="#">Best Seller 2</a></li>
                         <li><a href="#">Best Seller 3</a></li>
+                        <li><a href="bestseller.html"><u>See All</u></a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -80,6 +157,7 @@
                         <li><a href="#">Insert 1</a></li>
                         <li><a href="#">Insert 2</a></li>
                         <li><a href="#">Insert 3</a></li>
+                        <li><a href="bestseller.html"><u>See All</u></a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -89,6 +167,7 @@
                         <li><a href="#">Cushion 1</a></li>
                         <li><a href="#">Cushion 2</a></li>
                         <li><a href="#">Cushion 3</a></li>
+                        <li><a href="bestseller.html"><u>See All</u></a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -98,8 +177,11 @@
                         <li><a href="#">Pillow 1</a></li>
                         <li><a href="#">Pillow 2</a></li>
                         <li><a href="#">Pillow 3</a></li>
+                        <li><a href="bestseller.html"><u>See All</u></a></li>
                     </ul>
                 </li>
+
+                <!-- Repeat for other items like Shoe Inserts, Cushions, etc. -->
                 <li class="dropdown">
                     <a href="#">More</a>
                     <i class="fas fa-chevron-down dropdown-icon"></i>
@@ -115,12 +197,9 @@
                 <li><a href="#">Quiz</a></li>
             </ul>
         </nav>
-        <div class="icons">
-            <i class="fas fa-search "></i>
-            <i class="fas fa-shopping-cart"></i>
-            <i class="fas fa-user"></i>
-        </div>
-    </header>
+    </div>
+
+
 
 
 
@@ -133,20 +212,23 @@
     </div>
 
 
-    <div  class="modal" id="signupModal"  >
+
+
+
+     <div  class="modal" id="signupModal"  >
         <div class="modal-content">
-            <!-- Left Part -->
+        
             <div class="left-part">
-                <!-- Images Div -->
+              
                 <div class="img-div">
                     <img src="./assets/logo1.png" alt="Image 1">
                     <img src="./assets/powered by.svg" alt="Image 2">
                 </div>
     
-                <!-- Heading -->
+                
                 <p>Welcome to Frido! Register to avail the best deals!</p>
     
-                <!-- Card Section -->
+            
                 <div class="card-section">
                     <div class="card">
                         <i class="fas fa-gift"></i>
@@ -166,7 +248,6 @@
                 </div>
             </div>
     
-            <!-- Right Part -->
             <div class="right-part">
                 <p>Unlock Superior Discounts</p>
                 <p>Enter Mobile Number</p>
@@ -190,12 +271,10 @@
                 </p>
             </div>
     
-            <!-- Close Button -->
+         
             <span class="close">&times;</span>
         </div>
     </div>
-    
-    
     
 
     
