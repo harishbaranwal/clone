@@ -326,6 +326,7 @@ justify-content: space-between;
     font-size: 16px;
     padding-top: 12px;
     padding-bottom: 12px;
+   
 }
 
 .navbar > ul > li > .dropdown-content > li {
@@ -614,6 +615,9 @@ justify-content: space-between;
         padding: 10px;
         border-bottom: 1px solid #ddd;
     }
+    .navbar > ul > li > .dropdown-content {
+        top:62px
+    }
 
     .navbar ul li a {
         padding: 10px;
@@ -725,7 +729,7 @@ justify-content: space-between;
                     padding: 8px 10px;
                 }
               .header-body> .logo >a> img {
-                    height: 30px;
+                    height: 40px;
                 }
               
             }
