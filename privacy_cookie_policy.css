@@ -5,6 +5,7 @@
 
 .privacy_cookie_policy_box>h1{
     text-align: center;
+    margin-bottom: 0;
 }
 
 .privacy_cookie_policy_box>p>b{
@@ -32,4 +33,65 @@
 .privacy_cookie_policy_box>p>a{
     color: black;
     text-decoration: none;
+}
+
+
+
+@media(max-width:1024px){
+
+}
+
+
+
+@media(max-width:768px){
+    .privacy_cookie_policy_box{
+        width:88%;
+    }
+    .privacy_cookie_policy_box>h1{
+        font-size: 28px;
+        margin-top: 40px;
+    }
+    .privacy_cookie_policy_box>ol>li {
+        font-size: 15px;
+    }
+    
+    .privacy_cookie_policy_box>p,
+.privacy_cookie_policy_box>ol>li>p{
+    font-size: 15px;
+}
+
+.privacy_cookie_policy_box>ol>li>p{
+margin: 5px;
+}
+}
+
+
+
+@media(max-width:550px){
+    .privacy_cookie_policy_box{
+        width:90%;}
+        .privacy_cookie_policy_box>h1{
+            font-size: 26px;
+        }
+        .privacy_cookie_policy_box>ol>li {
+            font-size: 15px;
+        }
+        
+        .privacy_cookie_policy_box> p>b{
+            font-size: 14px;
+           
+        }
+}
+
+
+
+@media(max-width:420px){
+    .privacy_cookie_policy_box{
+        width:92%;}
+
+        .privacy_cookie_policy_box>h1{
+            font-size: 24px;
+        }
+        
+     
 }

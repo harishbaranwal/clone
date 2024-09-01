@@ -17,3 +17,52 @@
     color: black;
     text-decoration: none;
 }
+
+
+
+
+
+
+@media(max-width:768px){
+    .about_box{
+        width:88%;
+    }
+    .about_box>h1{
+    font-size: 28px;
+    margin-top: 40px;
+    }
+    .about_box>p{
+        font-size: 15px;
+    }
+}
+
+
+
+@media(max-width:550px){
+    
+    .about_box{
+        width:90%;
+    }
+    .about_box>h1{
+    font-size: 26px;
+
+    }
+
+}
+
+
+
+@media(max-width:420px){
+    .about_box{
+        width:92%;
+    }
+
+    .about_box>h1{
+    font-size: 24px;
+ 
+    }
+    .about_box>p{
+        font-size: 14px;
+    }
+    
+}

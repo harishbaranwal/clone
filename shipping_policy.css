@@ -1,10 +1,11 @@
 .shipping_policy_box{
     width:85%;
-   margin: 60px auto 100px auto;
+   margin: 4px auto 100px auto;
 }
 
 .shipping_policy_box>h1{
     text-align: center;
+
 }
 
 .shipping_policy_box>p:nth-of-type(1){
@@ -13,6 +14,7 @@
     font-weight: 600;
     line-height: 24px;
     margin-top: 50px;
+    
 }
 .shipping_policy_box>p{
     font-size: 16px;
@@ -23,4 +25,72 @@
 .shipping_policy_box>p>a{
     color: black;
     text-decoration: none;
+}
+
+
+
+
+
+@media(max-width:768px){
+    .shipping_policy_box{
+        width:88%;
+    }   
+
+    .shipping_policy_box>h1{
+        font-size: 28px;
+        margin-top: 40px;
+    }
+    .shipping_policy_box>p:nth-of-type(1){
+        font-size: 18px;
+        margin-top: 30px;
+    }
+    .shipping_policy_box>p{
+        font-size: 15px;
+    }
+    .shipping_policy_box>p:nth-of-type(1){
+        font-size: 16px;
+    }
+
+}
+
+
+
+@media(max-width:550px){
+    .shipping_policy_box{
+        width:90%;
+    }
+    .shipping_policy_box>h1{
+        font-size: 26px;
+    }
+    
+    .shipping_policy_box>p:nth-of-type(1){
+        font-size: 15px;
+        margin-top: 25px;
+    }
+
+
+
+}
+
+
+
+@media(max-width:420px){
+    
+    .about_box{
+        width:92%;
+    }
+
+    .shipping_policy_box>h1{
+        font-size: 24px;
+        margin-top: 40px;
+    }
+    .shipping_policy_box>p:nth-of-type(1){
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    
+    .shipping_policy_box>p{
+        font-size: 14px;
+    }
+    
 }
