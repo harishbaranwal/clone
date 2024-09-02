@@ -282,70 +282,6 @@
 
 
 
-    <div  class="modal" id="signupModal"  >
-        <div class="modal-content">
-            <!-- Left Part -->
-            <div class="left-part">
-                <!-- Images Div -->
-                <div class="img-div">
-                    <img src="./assets/logo1.png" alt="Image 1">
-                    <img src="./assets/powered by.svg" alt="Image 2">
-                </div>
-    
-                <!-- Heading -->
-                <p>Welcome to Frido! Register to avail the best deals!</p>
-    
-                <!-- Card Section -->
-                <div class="card-section">
-                    <div class="card">
-                        <i class="fas fa-gift"></i>
-                        <p>Special Offers</p>
-                        <p>Get access to exclusive offers and discounts.</p>
-                    </div>
-                    <div class="card">
-                        <i class="fas fa-shipping-fast"></i>
-                        <p>Fast Delivery</p>
-                        <p>Enjoy quick and reliable delivery services.</p>
-                    </div>
-                    <div class="card">
-                        <i class="fas fa-thumbs-up"></i>
-                        <p>Quality Assurance</p>
-                        <p>We ensure top-notch quality for all products.</p>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Right Part -->
-            <div class="right-part">
-                <p>Unlock Superior Discounts</p>
-                <p>Enter Mobile Number</p>
-                <input type="text" placeholder="Enter Here">
-                <div class="checkbox-div">
-                    <input type="checkbox" id="notify">
-                    <label for="notify">Notify me for any updates & offers</label>
-                </div>
-                <div class="or-divider">
-                    <hr>
-                    <span>OR</span>
-                    <hr>
-                </div>
-                <button class="whatsapp-btn"><i class="fab fa-whatsapp"></i> WhatsApp</button>
-                <p class="policy-text">
-                    I accept that I have read & understood Gokwik's 
-                    <a href="#">Privacy Policy and T&Cs</a>.
-                </p>
-                <p class="trouble-text">
-                    <a href="#">Trouble logging in?</a>
-                </p>
-            </div>
-    
-            <!-- Close Button -->
-            <span class="close">&times;</span>
-        </div>
-    </div>
-    
-    
-    
 
 
 
@@ -356,96 +292,119 @@
         <h2>Insoles</h2>
         <p>Read our latest articles about Shoe Insoles.</p>
         
-        <div class="slider_container">
-            <div class="blog_arrow blog_left_arrow">&#10094;</div>
-            <div class="slider_box">
-                <div class="slider">
-                    <div class="card">
-                        <a href="#"><img src="assets/blog.webp" alt="Insole 1"></a>
-                        <h3>Insole Model 1</h3>
-                        <a href="#"><button>Read More</button></a>
+   
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+                <li class="card">
+                    <div class="img">
+                        <a href="#"><img src="assets/blog.webp" alt="Insole 1" draggable="false"></a>
                     </div>
-                    <div class="card">
-                        <a href="#"><img src="assets/blog.webp" alt="Insole 2"></a>
-                        <h3>Insole Model 2</h3>
-                        <a href="#"><button>Read More</button></a>
+                    <p>Insole Model 1</p>
+                    <a href="#"><button>Read More</button></a>
+                </li>
+                <li class="card">
+                    <div class="img">
+                        <a href="#"><img src="assets/blog.webp" alt="Insole 2" draggable="false"></a>
                     </div>
-                    <div class="card">
-                        <a href="#"><img src="assets/blog.webp" alt="Insole 3"></a>
-                        <h3>Insole Model 3</h3>
-                        <a href="#"><button>Read More</button></a>
+                    <p>Insole Model 2</p>
+                    <a href="#"><button>Read More</button></a>
+                </li>
+                <li class="card">
+                    <div class="img">
+                        <a href="#"><img src="assets/blog.webp" alt="Insole 3" draggable="false"></a>
                     </div>
-                    <div class="card">
-                        <a href="#"><img src="assets/blog.webp" alt="Insole 4"></a>
-                        <h3>Insole Model 4</h3>
-                        <a href="#"><button>Read More</button></a>
+                    <p>Insole Model 3</p>
+                    <a href="#"><button>Read More</button></a>
+                </li>
+                <li class="card">
+                    <div class="img">
+                        <a href="#"><img src="assets/blog.webp" alt="Insole 4" draggable="false"></a>
                     </div>
-                    <div class="card">
-                        <a href="#"><img src="assets/blog.webp" alt="Insole 5"></a>
-                        <h3>Insole Model 5</h3>
-                        <a href="#"><button>Read More</button></a>
+                    <p>Insole Model 4</p>
+                    <a href="#"><button>Read More</button></a>
+                </li>
+                <li class="card">
+                    <div class="img">
+                        <a href="#"><img src="assets/blog.webp" alt="Insole 5" draggable="false"></a>
                     </div>
-                    <div class="card">
-                        <a href="#"><img src="assets/blog.webp" alt="Insole 6"></a>
-                        <h3>Insole Model 6</h3>
-                        <a href="#"><button>Read More</button></a>
+                    <p>Insole Model 5</p>
+                    <a href="#"><button>Read More</button></a>
+                </li>
+                <li class="card">
+                    <div class="img">
+                        <a href="#"><img src="assets/blog.webp" alt="Insole 6" draggable="false"></a>
                     </div>
-                </div>
-            </div>
-            <div class="blog_arrow blog_right_arrow">&#10095;</div>
+                    <p>Insole Model 6</p>
+                    <a href="#"><button>Read More</button></a>
+                </li>
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
         </div>
+        
+   
+   
     </div>
-    
+
+
+
     <div class="face_mask_blog">
-        <h2>Insoles</h2>
+        <h2>Face Masks</h2>
         <p>Read our latest articles about Shoe Insoles.</p>
         
-        <div class="slider_container">
-            <div class="blog_arrow blog_left_arrow">&#10094;</div>
-            <div class="slider_box">
-                <div class="slider">
-                    <div class="card">
-                        <a href="#"><img src="assets/blog.webp" alt="Insole 1"></a>
-                        <h3>Insole Model 1</h3>
-                        <p>Prolonged sitting can often cause back pain and that is very common due to driving. The vibrations trigger the process even more, making it hard fo... </p>
-                        <a href="#"><button>Read More</button></a>
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+                <li class="card">
+                    <div class="img">
+                        <a href="#"><img src="assets/blog.webp" alt="Insole 1" draggable="false"></a>
                     </div>
-                    <div class="card">
-                        <a href="#"><img src="assets/blog.webp" alt="Insole 2"></a>
-                        <h3>Insole Model 2</h3>
-                        <p>Prolonged sitting can often cause back pain and that is very common due to driving. The vibrations trigger the process even more, making it hard fo... </p>
-                        <a href="#"><button>Read More</button></a>
+                    <p>Insole Model 1</p>
+                    <a href="#"><button>Read More</button></a>
+                </li>
+                <li class="card">
+                    <div class="img">
+                        <a href="#"><img src="assets/blog.webp" alt="Insole 2" draggable="false"></a>
                     </div>
-                    <div class="card">
-                        <a href="#"><img src="assets/blog.webp" alt="Insole 3"></a>
-                        <h3>Insole Model 3</h3>
-                        <p>Prolonged sitting can often cause back pain and that is very common due to driving. The vibrations trigger the process even more, making it hard fo... </p>
-                        <a href="#"><button>Read More</button></a>
+                    <p>Insole Model 2</p>
+                    <a href="#"><button>Read More</button></a>
+                </li>
+                <li class="card">
+                    <div class="img">
+                        <a href="#"><img src="assets/blog.webp" alt="Insole 3" draggable="false"></a>
                     </div>
-                    <div class="card">
-                        <a href="#"><img src="assets/blog.webp" alt="Insole 4"></a>
-                        <h3>Insole Model 4</h3>
-                        <p>Prolonged sitting can often cause back pain and that is very common due to driving. The vibrations trigger the process even more, making it hard fo... </p>
-                        <a href="#"><button>Read More</button></a>
+                    <p>Insole Model 3</p>
+                    <a href="#"><button>Read More</button></a>
+                </li>
+                <li class="card">
+                    <div class="img">
+                        <a href="#"><img src="assets/blog.webp" alt="Insole 4" draggable="false"></a>
                     </div>
-                    <div class="card">
-                        <a href="#"><img src="assets/blog.webp" alt="Insole 5"></a>
-                        <h3>Insole Model 5</h3>
-                        <p>Prolonged sitting can often cause back pain and that is very common due to driving. The vibrations trigger the process even more, making it hard fo... </p>
-                        <a href="#"><button>Read More</button></a>
+                    <p>Insole Model 4</p>
+                    <a href="#"><button>Read More</button></a>
+                </li>
+                <li class="card">
+                    <div class="img">
+                        <a href="#"><img src="assets/blog.webp" alt="Insole 5" draggable="false"></a>
                     </div>
-                    <div class="card">
-                        <a href="#"><img src="assets/blog.webp" alt="Insole 6"></a>
-                        <h3>Insole Model 6</h3>
-                        <p>Prolonged sitting can often cause back pain and that is very common due to driving. The vibrations trigger the process even more, making it hard fo... </p>
-                        <a href="#"><button>Read More</button></a>
+                    <p>Insole Model 5</p>
+                    <a href="#"><button>Read More</button></a>
+                </li>
+                <li class="card">
+                    <div class="img">
+                        <a href="#"><img src="assets/blog.webp" alt="Insole 6" draggable="false"></a>
                     </div>
-                </div>
-            </div>
-            <div class="blog_arrow blog_right_arrow">&#10095;</div>
+                    <p>Insole Model 6</p>
+                    <a href="#"><button>Read More</button></a>
+                </li>
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
         </div>
+        
+   
+
     </div>
-    
+     
 
 
 

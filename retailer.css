@@ -14,6 +14,11 @@
 
 .retailer_box>p{
     color: grey;
+    line-height: 24px;
+    text-align: left;
+}
+.retailer_box>p:nth-of-type(1){
+    text-align: center;
 }
 .contact {
     display: flex;
@@ -37,6 +42,7 @@ border-radius: 15px;
     margin: 0 auto 10px auto;
     font-weight: 600;
     font-size: 16px;
+        line-height: 24px;
 }
 
 .buttons {
@@ -71,4 +77,163 @@ border-radius: 15px;
 .call_button:hover, .whatsapp_button:hover {
     background-color: #FFD43B;
     color: black;
+}
+
+
+
+
+@media(max-width:1200px){
+    .contact_1, .contact_2 {
+        width: 40%;
+        background-color: #fcf1c0;
+        padding: 25px;
+    }
+}
+
+
+@media(max-width:950px){
+    .contact_1, .contact_2 {
+        width: 40%;
+        background-color: #fcf1c0;
+        padding: 25px;
+    }
+    .retailer_box{
+        width:85%;
+        padding: 30px 7.5% 50px 7.5%;
+    }
+    
+}
+
+
+
+
+
+
+@media(max-width:768px){
+    .retailer_box{
+        width:88%;
+        padding: 30px 6% 50px 6%;
+    }   
+    
+
+    .retailer_box>h1{
+        font-size: 28px;
+        margin-top: 40px;
+    }
+    .retailer_box>p:nth-of-type(1){
+        font-size: 18px;
+        margin-top: 30px;
+    }
+    .retailer_box>p{
+        font-size: 15px;
+    }
+    .retailer_box>p:nth-of-type(1){
+        font-size: 16px;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+        margin:  50px auto;
+    }
+   
+   
+    .contact_1, .contact_2 {
+        width:60%;
+        background-color: #fcf1c0;
+        padding: 25px 50px;
+    }
+    .contact_2 {
+        margin-top: 30px;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 20px;
+    }
+ 
+    .call_button, .whatsapp_button {
+        display: flex;
+        align-items: center;
+        padding: 10px 25px;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 5px;
+    }
+    
+    .call_button i, .whatsapp_button i {
+        margin-right: 10px;
+    }
+
+}
+
+
+
+@media(max-width:550px){
+    .retailer_box{
+        width:90%;
+        padding: 30px 5% 50px 5%;
+    }
+    .retailer_box>h1{
+        font-size: 26px;
+    }
+    
+    .retailer_box>p:nth-of-type(1){
+        font-size: 15px;
+        margin-top: 25px;
+    }
+    .contact_1, .contact_2 {
+        width:70%;
+        background-color: #fcf1c0;
+        padding: 25px 50px;
+    }
+ 
+
+
+}
+
+
+
+@media(max-width:420px){
+    
+    .retailer_box{
+        width:92%;
+        padding: 30px 4% 50px 4%;
+    }
+
+    .retailer_box>h1{
+        font-size: 24px;
+        margin-top: 40px;
+    }
+    .retailer_box>p:nth-of-type(1){
+        font-size: 16px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .retailer_box>p{
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .contact {
+    width:100%;
+    margin:  50px auto;
+    }
+    .contact_1, .contact_2 {
+        width:100%;
+        background-color: #fcf1c0;
+        padding: 25px 0px;
+    }
+    .call_button, .whatsapp_button {
+        padding: 10px 20px;
+        font-size: 16px;
+        width:50%;
+    }
+    
 }

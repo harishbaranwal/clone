@@ -1,6 +1,6 @@
 .insoles_blog {
     text-align: center;
-    padding: 20px;
+    padding: 20px 20px 10px 20px;
 }
 
 .insoles_blog > h2 {
@@ -13,77 +13,144 @@
     font-size: 14px;
 }
 
-.slider_container {
+
+
+
+
+
+
+
+
+
+.wrapper {
+    
+    width: 90%;
+    margin: auto;
     position: relative;
-    width: 85%;
-    margin: 20px auto;
-    overflow: hidden;
-    padding: 0 20px;
+}
+  .wrapper>i {
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.85);
+  }
+  .wrapper i:first-child{
+    left: -22px;
+  }
+  .wrapper i:last-child{
+    right: -22px;
+  }
+  .wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) );
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  .carousel.no-transition {
+    scroll-behavior: auto;
+  }
+  .carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+  }
+  .carousel :where(.card, .img) {
+    display: flex;
+  }
+  .carousel .card {
+    scroll-snap-align: start;
+    height:auto;
+    min-height: 300px;
+    list-style: none;
+    border: 2px black solid;
+    background-color: white;
+    flex-direction: column;
+    border-radius: 20px;
+    padding-bottom: 20px;
+  }
+  .carousel .card .img {
+    background:white;
+    /* border-radius: 25px 25px 0 0; */
+    width:100%;
+    margin: 0 auto;
+  }
+  .card .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+  }
+
+
+
+.wrapper > .carousel > .card > h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+}
+.wrapper > .carousel > .card > span {
+  color: #6A6D78;
+  font-size: 1.31rem;
 }
 
-.slider_container > .blog_arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 1;
-    color: #333;
-    background-color: rgba(200, 200, 200, 0.7);
-    padding: 5px;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    user-select: none;
+
+
+
+
+
+
+ .card > a {
+    width: 80%;
+    margin:   0 auto;
+
+}
+
+
+ .card > p:nth-of-type(1) {
+    font-size: 18px;
+    margin: 10px 10px;
+    font-weight: 600;
+}
+
+ .card > p:nth-of-type(2) {
+    font-size: 16px;
+    margin: 10px 10px;
+    color: gray;
+   
+}
+
+ .card > a:nth-of-type(2) {
     display: flex;
-    align-items: center;
+    width: auto;
+    height: auto;
+    text-decoration: none;
     justify-content: center;
 }
 
-.slider_container > .blog_left_arrow {
-    left: 0;
-}
-
-.slider_container > .blog_right_arrow {
-    right: 0;
-}
-
-.slider_box {
-    width: calc(100% - 60px);
-    display: flex;
-    overflow: hidden;
-    margin: 0 auto;
-}
-
-.slider {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.slider > .card {
-    min-width: 33.33%;
-    box-sizing: border-box;
-    padding: 10px;
-    text-align: center;
-}
-
-.slider > .card > a > img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.slider > .card > h3 {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-.slider > .card > p {
-    font-size: 14px;
-    color: grey;
-}
-
-.slider > .card > a > button {
+ .card > a > button {
     padding: 8px 12px;
     background-color: #007bff;
     color: #fff;
@@ -93,15 +160,121 @@
     cursor: pointer;
 }
 
-.slider > .card > a > button:hover {
+ .card > a > button:hover {
     background-color: #FFD43B;
     color: black;
 }
 
-.face_mask_blog {
+
+
+
+
+
+@media(max-width:1200px){
+
+    .carousel .card {
+        min-height: 250px;
+    }
+
+    }
+    
+    
+    @media(max-width:1000px){
+        .wrapper {
+            max-width: 90%;
+        }
+        .carousel .card {
+            min-height: 200px;
+        }
+        }
+    
+        
+
+
+
+@media (max-width: 768px) {
+    .wrapper > .carousel {
+      grid-auto-columns: 51%;
+    }
+      .press_release>h2{
+        font-size: 28px;
+        margin-top: 40px;
+      }
+      .carousel .card {
+        min-height: 250px;
+    }
+    
+  }
+
+
+
+
+
+  
+  @media (max-width: 600px) {
+    .wrapper > .carousel {
+      grid-auto-columns: 51%;
+    }
+    .wrapper {
+        max-width: 85%;
+    }
+    .carousel .card {
+        min-height: 200px;
+    }
+  }
+
+  
+  @media (max-width: 540px) {
+    .wrapper > .carousel {
+      grid-auto-columns: 110%;
+    }
+    .carousel .card {
+        min-height: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .wrapper > .carousel {
+      grid-auto-columns: 112%;
+    }
+    .wrapper>i {
+        
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+    }
+  }
+  
+  
+  
+  @media (max-width: 420px) {
+    .wrapper > .carousel {
+      grid-auto-columns: 114%;
+    }
+    .carousel .card {
+        min-height: 300px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+  .face_mask_blog {
     text-align: center;
-    padding: 20px;
-    margin-top: 50px;
+    padding: 10px 20px;
 }
 
 .face_mask_blog > h2 {
@@ -113,3 +286,8 @@
     margin: 0;
     font-size: 14px;
 }
+
+
+
+
+
