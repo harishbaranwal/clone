@@ -29,13 +29,6 @@ body {
 
 
 
-section {
-    position: relative;
-margin-top: 10px; 
-        /* transition: margin-top .01s;  */
-        transition: margin-top 0.002s ease;
-    
-}
 
 
 
@@ -1362,6 +1355,36 @@ font-size: 22px;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section {
+    position: relative;
+margin-top: 10px; 
+        /* transition: margin-top .01s;  */
+        transition: margin-top 0.002s ease;
+    
+}
+
 .marquee-top,
 .marquee-bottom {
     height: 2%;
@@ -1384,14 +1407,17 @@ font-size: 22px;
     font-weight: 600;
 }
 
+.potrait_banner_img{
+    display:none;
+}
 
-.banner_img {
+.landscape_banner_img {
     text-align: center;
     position: relative;
    
 }
 
-.banner_img>img {
+.landscape_banner_img>img {
     height: 100%;
     width: auto; 
     max-width: 100%;
@@ -1401,52 +1427,22 @@ font-size: 22px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media(max-width:650px){
+    .potrait_banner_img{
+        display:contents;
+    }
+    .potrait_banner_img>img {
+        height: 100%;
+        width: auto; 
+        max-width: 100%;
+        
+    }
+    
+    
+    .landscape_banner_img{
+        display: none;
+    }
+}
 
 
 
@@ -1470,7 +1466,6 @@ font-size: 22px;
 /* CSS */
 .insoles-section {
     position: relative;
-   
     background: linear-gradient(to bottom, #ffbe73, #ffdbb3);
     padding-bottom: 10px;
 
@@ -1479,7 +1474,6 @@ font-size: 22px;
 .cushions-section {
     position: relative;
     background: linear-gradient(to bottom,#ffdbb3, #ffdfbb, #e7f9dd);
-
       width: 100%;
     padding-bottom: 10px;
 
@@ -1492,13 +1486,18 @@ font-size: 22px;
 }
 
 
-
-
+.insoles-image-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Ensure no overflow when scaling */
+    text-align: center; /* Center the image horizontally */
+}
 
 
 .insoles-image {
-    width: 100%; /* Adjust as needed */
+    width: 100%;
     height: auto;
+    display: inline-block; /* Allows centering within the wrapper */
 }
 
 
@@ -1507,7 +1506,7 @@ font-size: 22px;
 
 
 
-
+/* 
 .wrapper {
     max-width: 1500px;
     width: 92%;
@@ -1587,8 +1586,101 @@ font-size: 22px;
     border-radius: 30px;
     object-fit: cover;
   }
+ */
 
 
+
+
+
+
+
+ .wrapper {
+    
+    width: 92%;
+    margin: auto;
+    position: relative;
+}
+  .wrapper>i {
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.85);
+  }
+  .wrapper i:first-child{
+    left: -22px;
+  }
+  .wrapper i:last-child{
+    right: -22px;
+  }
+  .wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 4) );
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 12px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  .carousel.no-transition {
+    scroll-behavior: auto;
+  }
+  .carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+  }
+  .carousel :where(.card, .img) {
+    display: flex;
+  }
+  .carousel .card {
+    scroll-snap-align: start;
+    height:auto;
+    min-height: 300px;
+    list-style: none;
+    border: 2px black solid;
+    background-color: white;
+    flex-direction: column;
+    border-radius: 20px;
+    padding-bottom: 20px;
+  }
+  .carousel .card .img {
+    background:white;
+    border-radius: 20px 20px 0 0;
+    width:100%;
+    margin: 0 auto;
+  }
+  .card .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+  }
+
+
+
+
+
+  
 
   .carousel .card h2 {
     font-weight: 600;
@@ -1723,6 +1815,106 @@ font-size: 12px;
 
 
 
+@media(max-width:1100px){
+
+    .wrapper > .carousel {
+        grid-auto-columns: 33.33%;
+        gap:16px;
+      }
+}
+
+
+
+@media (max-width: 768px) {
+    .wrapper > .carousel {
+      grid-auto-columns: 51%;
+    }
+  
+    
+  }
+
+
+
+
+  
+  @media (max-width: 600px) {
+    .wrapper > .carousel {
+      grid-auto-columns: 51%;
+    }
+    .wrapper {
+        max-width: 85%;
+    }
+    .carousel .card {
+        min-height: 200px;
+    }
+    .insoles-image {
+        width: 150%; /* Scale the image up */
+        max-width: none; /* Prevent it from shrinking */
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%); /* Center the image */
+    }
+  }
+
+
+  @media (max-width: 540px) {
+    .wrapper > .carousel {
+      grid-auto-columns: 110%;
+    }
+    .carousel .card {
+        min-height: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .wrapper > .carousel {
+      grid-auto-columns: 112%;
+    }
+    .wrapper>i {
+        
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+    }
+  }
+
+
+
+  
+  @media (max-width: 420px) {
+    .wrapper > .carousel {
+      grid-auto-columns: 112%;
+    }
+
+    .insoles-image {
+        width: 200%; /* Scale the image up */
+        max-width: none; /* Prevent it from shrinking */
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%); /* Center the image */
+    }
+  
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1757,6 +1949,55 @@ font-size: 12px;
 
 
 
+@media(max-width:768px){
+
+    .footer_card {
+        height: 130px;
+    }
+    
+    .footer_card>h1 {
+        font-size: 24px; 
+    }
+    
+    .footer_card>h1>.comfort {
+        width: 130px; 
+    }
+
+}
+
+@media(max-width:550px){
+    
+    .footer_card {
+        height: 120px;
+    }
+    
+    .footer_card>h1 {
+        font-size: 20px; 
+    
+    }
+    
+    .footer_card>h1>.comfort {
+        width: 120px; 
+    }
+
+}
+
+
+@media(max-width:420px){
+    
+    .footer_card {
+        height: 100px;
+    }
+    
+    .footer_card>h1 {
+        font-size: 16px; 
+    }
+    
+    .footer_card>h1>.comfort {
+        width: 100px; 
+    }
+
+}
 
 
 

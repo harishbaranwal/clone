@@ -17,6 +17,66 @@
 
 
 
+@media(max-width:768px){
+
+    .banner{
+      height: 170px;
+    }
+    .banner>h1 {
+      font-size: 26px; 
+      line-height:34px;
+  
+}
+
+}
+
+
+@media(max-width:550px){
+
+    .banner{
+      height: 150px;
+    }
+    .banner>h1 {
+      font-size: 22px; 
+  
+      line-height:30px;
+  }
+}
+
+@media(max-width:420px){
+  .banner{
+    height: 120px;
+  }
+  .banner>h1 {
+    font-size: 20px; 
+
+    line-height:28px;
+}
+
+}
+
+
+/* 
+
+
+////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////
+
+
+
+ */
+
+
+
+
+
+
+
 .compare_section {
     margin: 50px auto;
     width: 94%;
@@ -99,6 +159,8 @@
 
 
 
+
+
 .row-6 {
     display: flex;
     flex-wrap: wrap;
@@ -137,6 +199,9 @@ margin-bottom: 0;
     font-size: 18px;
     font-weight: 600;
 }
+
+
+
 
 
 .row-7 {
@@ -278,4 +343,142 @@ margin-bottom: 0;
 /* Optional: Ensuring button also shows hover effect when hovering directly */
 .row-1 > .cell > .text-container > a > button:hover {
     background-color: #fdd627;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:420px){
+
+    .grid-container {
+
+        gap: 5px; 
+    }
+    .fixed-column {
+
+        row-gap: 5px; 
+    }
+
+ 
+    .scrollable-columns {
+        gap: 5px; 
+    }
+
+    .row {
+        gap: 5px; 
+    }
+
+
+    .fixed-column>.cell{
+        padding: 10px 10px;
+        width: auto;
+        height: 100px;
+        font-size: 16px;
+        border-radius: 5px; 
+    }
+    .row>.cell {
+        padding: 15px ;
+        width: 200px;
+        height: 100px;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+
+
+
+
+
+    .row-6 >.cell {
+        padding: 10px;
+        height: 120px;
+    }
+    
+   
+    .fixed-column>.row-6_cell{
+        height: 120px;
+    }
+
+    .row-6 >.cell>.line {
+        margin-bottom: 3px; /* Space between lines */
+
+    }
+
+    .row-6 >.cell>.line>p {
+        font-size: 14px;}
+
+
+
+
+
+
+
+        .row-7 > .cell > .line {
+            width:120px;
+            margin-bottom: 10px; 
+        }
+        
+
+        .row-7 > .cell > .line > .yellow_circle {
+            width: 15px; 
+            height: 15px; 
+
+        }
+        .row-7 > .cell > .line > .green_circle {
+            width: 15px; 
+            height: 15px; 
+      
+        }
+
+        .row-7 > .cell > .line > p {
+            margin: 0 0 0 20px; 
+            font-size: 14px;
+     
+        }
+
+
+
+
+
+
+
+        .row-1 > .cell {
+            padding: 10px;
+            height: 120px;
+        }
+        
+        
+        .fixed-column>.row-1_cell{
+            height: 120px;
+        }
+        
+
+
+        .row-1 > .cell > .text-container > p {
+font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .row-1 > .cell > .text-container > a {
+            padding: 6px 12px;
+            font-size: 13px;
+            margin: 5px 0px;
+
+        }
+
+        .row-1 > .cell > img {
+            width: 50px;
+            height: 50px;
+        }
+
+
+
+
+
 }

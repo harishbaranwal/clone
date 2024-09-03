@@ -19,6 +19,53 @@ color: black;
 
 
 
+@media(max-width:768px){
+
+  .best_seller_banner{
+    height: 170px;
+  }
+  .best_seller_banner>h1 {
+    font-size: 26px; 
+    line-height:34px;
+
+}
+
+}
+
+
+@media(max-width:550px){
+
+  .best_seller_banner{
+    height: 150px;
+  }
+  .best_seller_banner>h1 {
+    font-size: 22px; 
+
+    line-height:30px;
+}
+}
+
+@media(max-width:420px){
+.best_seller_banner{
+  height: 80px;
+}
+.best_seller_banner>h1 {
+  font-size: 28px; 
+  line-height:28px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -68,10 +115,59 @@ color: black;
 
 
 
+@media(max-width:768px){
+
+  .quiz_banner > h1{
+font-size: 34px;
+  }
+  .quiz_banner > h3{
+    font-size:20px;
+    width: 82%;
+  }
+  .quiz_banner > button {
+    padding: 15px 25px;
+    border-radius: 10px;
+  }
+  
+.quiz_banner > button > a {
+  font-size:20px;
+}
+
+}
+
+@media(max-width:550px){
+
+  .quiz_banner > h1{
+font-size: 32px;
+  }
+  .quiz_banner > h3{
+    font-size: 18px;
+    width: 82%;
+  }
+ 
+
+}
 
 
+@media(max-width:420px){
 
+  .quiz_banner > h1{
+font-size: 30px;
+  }
+  .quiz_banner > h3{
+    font-size: 18px;
+    width: 75%;
+  }
+  .quiz_banner > button {
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+.quiz_banner > button > a {
+  font-size: 16px;
+}
 
+}
 
 
 
@@ -141,20 +237,176 @@ font-size: 18px;
 
 
 
+@media(max-width:1024px){
+  .awards_section{
+    width: 85%;
+  }
+  
+
+}
+
+@media(max-width:768px){
+  
+  
+  .awards_section{
+    width: 90%;
+  }
+  
+    .awards_section > h1{
+      font-size: 40px;
+  }
+  
+  .awards_section > h3{
+    font-size: 22px;
+  
+  }
+  .awards_section > p {
+    text-align: center;
+    font-size: 22px;
+  }
+  .award_box{
+    flex-direction: column;
+    align-items: center;
+  }
+  .awards_section > .award_box > .award_box_1,
+  .awards_section > .award_box > .award_box_2,
+  .awards_section > .award_box > .award_box_3 {
+      width: 90%;
+      
+  }
+  .awards_section > .award_box > .award_box_1 >p,
+  .awards_section > .award_box > .award_box_2 >p,
+  .awards_section > .award_box > .award_box_3 >p {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+}
+
+@media(max-width:550px){
+  
+
+
+  .awards_section{
+    width: 90%;
+  }
+  
+    .awards_section > h1{
+      font-size: 38px;
+  }
+  
+  .awards_section > h3{
+    font-size: 20px;
+  
+  }
+  .awards_section > p {
+    text-align: center;
+    font-size: 20px;
+  }
+  .award_box{
+    flex-direction: column;
+   
+    align-items: center;
+  }
+  .awards_section > .award_box > .award_box_1,
+  .awards_section > .award_box > .award_box_2,
+  .awards_section > .award_box > .award_box_3 {
+      width: 90%;
+      
+  }
+  .awards_section > .award_box > .award_box_1 >p,
+  .awards_section > .award_box > .award_box_2 >p,
+  .awards_section > .award_box > .award_box_3 >p {
+    font-size: 18px;
+  }
+  
+  
+  
+
+
+}
+
+
+
+
+
+@media(max-width:420px){
+  
+.awards_section{
+  width: 90%;
+}
+
+  .awards_section > h1{
+    font-size: 34px;
+}
+
+.awards_section > h3{
+  font-size: 18px;
+
+}
+.awards_section > p {
+  text-align: center;
+  font-size: 18px;
+}
+.award_box{
+  flex-direction: column;
+ 
+  align-items: center;
+}
+.awards_section > .award_box > .award_box_1,
+.awards_section > .award_box > .award_box_2,
+.awards_section > .award_box > .award_box_3 {
+    width: 70%;
+    
+}
+.awards_section > .award_box > .award_box_1 >p,
+.awards_section > .award_box > .award_box_2 >p,
+.awards_section > .award_box > .award_box_3 >p {
+  font-size: 16px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .best_seller_product_section {
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap to the next row */
     gap: 30px; /* Add some gap between cards */
-    width: 75%;
+    width: 80%;
     margin: 40px auto;
     justify-content: space-between; /* Align cards evenly with spacing between */
   }
 
 
   .best_seller_product_section > .card {
-    flex: 0 1 calc(33.333% - 20px); /* 3 cards per row with gap considered */
+   /* 3 cards per row with gap considered */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
     height: 750px;
     list-style: none;
@@ -365,4 +617,63 @@ font-size: 18px;
     font-size: 20px;
     font-weight: 700;
   }
+
   
+  @media(max-width:1150px){
+    .best_seller_product_section {
+      width: 88%;
+    }
+  }
+
+
+  @media(max-width:1024px){
+    .best_seller_product_section {
+      column-gap: 10px;
+      row-gap: 30px; 
+      width: 92%;
+    }
+
+      .best_seller_product_section > .card {
+      width: calc(33.333% - 10px); 
+    }
+  
+  
+   
+  }
+
+
+  @media(max-width:768px){
+    .best_seller_product_section {
+      display: flex;
+      flex-wrap: wrap; /* Allow items to wrap to the next row */
+      gap: 30px; /* Add some gap between cards */
+      width: 85%;
+      margin: 40px auto;
+      justify-content: space-between; /* Align cards evenly with spacing between */
+    }
+  
+  
+    .best_seller_product_section > .card {
+      width: calc(50% - 20px); /* 3 cards per row with gap considered */
+      /* Set an explicit width for each card */
+    }
+  }
+
+  
+
+  @media(max-width:480px){
+    .best_seller_product_section {
+      display: flex;
+      flex-wrap: wrap; /* Allow items to wrap to the next row */
+      gap: 30px; /* Add some gap between cards */
+      width: 85%;
+      margin: 40px auto;
+      justify-content: space-between; /* Align cards evenly with spacing between */
+    }
+  
+  
+    .best_seller_product_section > .card {
+      flex: 0 1 calc(100%); /* 3 cards per row with gap considered */
+      width: calc(100% ); /* Set an explicit width for each card */
+    }
+  }
