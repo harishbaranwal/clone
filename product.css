@@ -774,7 +774,6 @@ border-radius: 10px;
     display: flex;
     overflow-x: auto; /* Allow horizontal scrolling */
     margin-top: 20px;
-
     width: 100%;
     max-width: 100%;
     
@@ -1126,30 +1125,6 @@ border-radius: 15px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .choises {
     display: flex;
     flex-direction: column;
@@ -1253,7 +1228,9 @@ input[type="radio"] {
     border: none;
 
 }
-   
+.size-option, .colour-option{
+    line-height: 20px;
+}
 
 /* Highlight selected option */
 .size-option.selected, .colour-option.selected, .combo_offer_item.selected>label {
@@ -1482,6 +1459,106 @@ font-weight: 600;
     background-color:#f7dc79;
     padding: 5px 15px;
 }
+
+
+
+@media(max-width:650px){
+    .right_product_details>.review {
+        border: 2px rgb(202, 202, 202) solid ;
+        border-radius: 5px;
+        width: auto;
+        max-width: 70%;
+        padding: 5px 10px;
+    }
+    .right_product_details>.review>p  {
+        font-size: 16px;
+        width: auto; 
+        
+          }
+          .right_product_details>h1{
+            font-size: 36px;
+          }
+    .main_product_section {
+        flex-direction:column;
+    }
+    
+    .left_product_img {
+        width:100%;
+    }
+    .left_product_img {
+        position:static;
+       
+    }
+
+    .right_product_details{
+margin-top: 30px;
+        width:100%;
+        box-shadow:none;
+        padding: 20px 0;
+     
+    }
+    .image-display {
+        position: relative;
+     height:70%;
+     width: auto; /* Ensure it takes full width of the left container */
+    }
+
+    .thumbnail-container {
+        height:30%;
+     width: auto;
+    }
+    
+    } 
+    
+
+
+
+
+
+@media(max-width:420px){
+    .main_product_section {
+    padding: 0;
+    width: 90%;
+    }
+    .product_points>.point>p {
+        font-size: 14px;
+        margin: auto 0 auto 5px;
+    }
+    .right_product_details>h1{
+        font-size: 26px;
+      }
+      .right_product_details>.pricing>.original_price{
+        font-size: 24px;
+      }
+      .right_product_details>.pricing>.old_price{
+        font-size: 16px;
+        margin-left:5px;
+      }
+      .right_product_details>.pricing>.discount{
+        padding: 8px 20px;
+        border-radius: 15px;
+margin-left: 20px;
+    font-size: 14px;
+       }
+       .size-option, .colour-option{
+        line-height: 24px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

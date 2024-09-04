@@ -68,22 +68,31 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
 window.addEventListener("scroll", function() {
     var leftProductImg = document.querySelector('.left_product_img');
     var rightProductDetails = document.querySelector('.right_product_details');
-
     var rect = rightProductDetails.getBoundingClientRect();
     var windowHeight = window.innerHeight;
+    var windowWidth = window.innerWidth;
 
-    if (rect.bottom <= windowHeight) {
-        // leftProductImg.style.position = 'absolute';
-        leftProductImg.style.top = (rightProductDetails.offsetHeight - leftProductImg.offsetHeight) + 'px';
+    // Apply logic only for devices with a width greater than or equal to 768px
+    if (windowWidth >= 650) {
+        if (rect.bottom <= windowHeight) {
+            leftProductImg.style.position = 'absolute';
+            leftProductImg.style.top = (rightProductDetails.offsetHeight - leftProductImg.offsetHeight) + 'px';
+        } else {
+            leftProductImg.style.position = 'sticky';
+            leftProductImg.style.top = '20px'; // Same as the CSS top value
+        }
     } else {
-        leftProductImg.style.position = 'sticky';
-        leftProductImg.style.top = '20px'; // Same as the CSS top value
+        // Reset styles for devices with width less than 768px
+        leftProductImg.style.position = '';
+        leftProductImg.style.top = '';
     }
 });
+
+
+
 
 
 
